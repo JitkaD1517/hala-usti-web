@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hala Ústí — kynologická & agility hala</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F33;--green:#37B24D;--green-d:#2B8A3E;--ink:#1c2733;--grey:#5c6b7a;--bg:#f5f7f9}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff}
+h1,h2,h3{font-family:'Barlow Condensed';letter-spacing:1px;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+/* HERO */
+.hero{background:linear-gradient(160deg,#0B1F33 60%,#123152);color:#fff;padding:26px 0 70px}
+.nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:52px}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Barlow Condensed';font-weight:800;font-size:28px;letter-spacing:2px}
+.nav a{color:#cfd8e3;text-decoration:none;margin-left:22px;font-size:15px;font-weight:600}
+.nav a.de{border:1px solid #37B24D;border-radius:6px;padding:4px 10px;color:#7ce08f}
+.hero h1{font-size:64px;font-weight:800;line-height:1.05}
+.hero h1 em{color:var(--green);font-style:normal}
+.hero p.sub{font-size:20px;color:#c9d4e0;max-width:640px;margin:18px 0 30px}
+.cta{display:inline-block;background:var(--green);color:#fff;font-weight:700;text-decoration:none;padding:16px 34px;border-radius:10px;font-size:18px;margin-right:14px}
+.cta.ghost{background:transparent;border:2px solid var(--green);color:#7ce08f}
+.badges{display:flex;gap:26px;margin-top:44px;flex-wrap:wrap}
+.badge{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 22px;font-size:15px}
+.badge b{color:var(--green);font-size:22px;font-family:'Barlow Condensed';letter-spacing:1px;display:block}
+/* AKCE pruh */
+.akce{background:var(--green);color:#fff;text-align:center;padding:14px 20px;font-weight:700;font-size:17px}
+/* SEKCE */
+section{padding:64px 0}
+section.alt{background:var(--bg)}
+h2{font-size:40px;color:var(--navy);margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:20px}
+.card h3{font-size:22px;color:var(--navy);margin-bottom:8px}
+.card p{margin:0;color:var(--grey);font-size:15px;line-height:1.5}
+.ph{background:#dde3ea;border:2px dashed #b9c2cc;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#8a97a5;font-size:14px;min-height:220px}
+/* TRENÉRKA */
+.tren{display:grid;grid-template-columns:280px 1fr;gap:34px;align-items:start}
+/* CENÍK */
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+th{background:var(--navy);color:#fff;text-align:left;padding:14px 18px;font-family:'Barlow Condensed';font-size:19px;letter-spacing:1px}
+td{padding:14px 18px;border-top:1px solid #edf1f5;font-size:16px}
+td.p{font-weight:700;color:var(--navy);white-space:nowrap}
+.note{color:var(--grey);font-size:14px;margin-top:12px}
+/* PATIČKA */
+footer{background:var(--navy);color:#b9c6d4;padding:44px 0;font-size:15px}
+footer h3{color:#fff;font-size:22px;margin-bottom:10px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
+a{color:var(--green)}
+</style></head><body>
+
+<div class="hero"><div class="wrap">
+  <div class="nav">
+    <div class="logo">
+      <svg width="46" height="46" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="#fff"/><circle cx="60" cy="60" r="56" fill="none" stroke="#37B24D" stroke-width="6"/><path d="M18,76 Q60,18 102,76" fill="none" stroke="#37B24D" stroke-width="4" stroke-dasharray="1 8" stroke-linecap="round"/><path transform="translate(24,26) scale(0.85)" fill="#0B1F33" d="M8,54 C14,44 24,38 34,36 C40,35 46,32 50,27 C53,23 57,20 62,20 C66,20 69,22 70,25 C71,27 73,28 76,28 L82,28 C83,28 84,29 83,30 L78,33 C76,34 74,34 72,34 C70,40 64,44 57,45 C48,47 40,48 33,52 C27,55 20,60 16,66 L12,64 C13,60 14,57 16,54 Z"/><g transform="translate(25,64)" fill="#37B24D"><rect x="0" y="0" width="6" height="46" rx="2"/><rect x="64" y="0" width="6" height="46" rx="2"/><rect x="-4" y="8" width="78" height="8" rx="3"/></g></svg>
+      HALA ÚSTÍ
+    </div>
+    <div><a href="#hala">O hale</a><a href="pronajem.html">Pronájem</a><a href="treninky.html">Tréninky</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a><a class="cta" style="padding:8px 18px;font-size:15px;margin-left:22px" href="https://hala-usti.dogres.cz/">Rezervovat</a><a class="de" href="#">DE</a></div>
+  </div>
+  <h1>Krytá profesionální<br><em>agility hala</em> 40 × 15 m</h1>
+  <p class="sub">Povrch Juta Grass Play Comfort 24, kompletní sada překážek a zázemí pro tréninky, semináře i závody. 10 minut z dálnice D8 — na půl cesty mezi Prahou a Drážďany.</p>
+  <a class="cta" href="https://hala-usti.dogres.cz/">Rezervovat termín</a>
+  <a class="cta ghost" href="#cenik">Ceník a bloky</a>
+  <div class="badges">
+    <div class="badge"><b>40 × 15 m</b>plnohodnotný parkur</div>
+    <div class="badge"><b>Juta Grass 24</b>profi povrch pro agility</div>
+    <div class="badge"><b>6:00–20:00</b>denně, online rezervace</div>
+    <div class="badge"><b>D8 · 10 min</b>Praha ↔ Dresden</div>
+  </div>
+</div></div>
+
+<div class="akce">⚡ Do 30. 9.: nakupte si v rezervačním systému kredity za letošních 350 Kč/h — od 1. 10. platí nový ceník.</div>
+
+<section id="hala"><div class="wrap">
+  <h2>O HALE</h2>
+  <div class="grid">
+    <img src="fotky/hala1.jpeg" alt="Interiér haly s parkurem" style="width:100%;border-radius:12px;object-fit:cover;height:220px">
+    <img src="fotky/hala5.jpeg" alt="Kladina Galican" style="width:100%;border-radius:12px;object-fit:cover;height:220px">
+    <img src="fotky/hala6.jpeg" alt="Áčko Galican" style="width:100%;border-radius:12px;object-fit:cover;height:220px">
+  </div>
+  <div class="grid" style="margin-top:18px">
+    <div class="card"><h3>Překážky Galican</h3><p>Kompletní sada překážek španělské značky Galican: kladina (Soft Line), áčko, houpačka, tunely 3/4/5/6 m, 12× skoková, dálka, zeď, kruh, slalom. <b>Kladina i áčko jsou na kolečkách</b> — snadno si je při tréninku přemístíte sami (u kladiny se řiďte návodem v členské sekci).</p></div>
+    <div class="card"><h3>Povrch</h3><p>Juta Grass Play Comfort 24 — bezpečný a rychlý povrch vyvinutý pro psí sporty, šetrný ke kloubům.</p></div>
+    <div class="card"><h3>Zázemí</h3><p>Parkování u haly, zázemí pro psovody, možnost celodenních akcí a seminářů. Provoz denně 6:00–20:00 (po dohodě i déle).</p></div>
+    <div class="card"><h3>Rezervace online</h3><p>Přehledný rezervační systém Dogres — vidíte volné hodiny a rezervujete na pár kliknutí, i z mobilu.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="trenerka"><div class="wrap">
+  <h2>TRÉNINKY S JITKOU ĎURICOVOU</h2>
+  <div class="tren">
+    <img src="fotky/06-mcr2024-bedna-jitka.jpg" alt="Jitka Ďuricová na stupních vítězů MČR 2024" style="width:100%;border-radius:12px;object-fit:cover;max-height:420px">
+    <div>
+      <h3 style="font-size:26px;color:var(--navy)">Jitka Ďuricová — provozní haly</h3>
+      <p style="font-size:17px;line-height:1.6;color:var(--ink)">Agility aktivně závodím od roku 2018 se svými papilony a border kolií. Mezi mé úspěchy patří titul 1. vicemistr ČR v agility v družstvech (2025, 2026) a druhé a třetí místo z mistrovství Slovenska papillonů.</p>
+      <p style="font-size:17px;line-height:1.6;color:var(--ink)">V hale vypisuji <b>tréninky agility pro začátečníky a mírně pokročilé</b> — najdete je přímo v rezervačním systému. A protože se profesně věnuji práci s myslí, patří k mým tréninkům i <b>mentální příprava handlera</b>: soustředění na startu a klidná souhra se psem.</p>
+      <p class="note"><a class="cta" style="padding:10px 22px;font-size:15px" href="https://hala-usti.dogres.cz/">Termíny tréninků v rezervačním systému</a></p>
+    </div>
+  </div>
+</div></section>
+
+<section id="cenik"><div class="wrap">
+  <h2>CENÍK — SEZÓNA 2026/27</h2>
+  <table>
+    <tr><th>Pronájem haly</th><th style="text-align:right">Cena</th></tr>
+    <tr><td>Hodinový pronájem (od 1. 10. 2026)</td><td class="p" style="text-align:right">450 Kč / h</td></tr>
+    <tr><td style="color:#2B8A3E"><b>AKCE do 30. 9.: nákup kreditů v rezervačním systému</b></td><td class="p" style="text-align:right;color:#2B8A3E">350 Kč / h</td></tr>
+    <tr><td>Celodenní pronájem (seminář, akce, závody)</td><td class="p" style="text-align:right">5 500 Kč</td></tr>
+    <tr><td>Letní cena (duben–září)</td><td class="p" style="text-align:right">350 Kč / h</td></tr>
+    <tr><td>Miete für deutsche Gäste</td><td class="p" style="text-align:right">18 € / Std.</td></tr>
+  </table>
+  <p class="note">Ceny jsou konečné. Rezervace, platby a nákup kreditů přes systém Dogres. Halu provozuje Centrum systemiky a NLP s.r.o. · Dotazy: duricova@systemika-nlp.cz, +420 724 256 055.</p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>SEMINÁŘE A AKCE</h2>
+  <div class="grid">
+    <div class="card"><h3>Víkendové semináře</h3><p>Hostující trenéři z ČR i zahraničí. Chcete u nás uspořádat seminář? Celodenní pronájem za paušál — ozvěte se.</p></div>
+    <div class="card"><h3>Zimní hobby závody</h3><p>Připravujeme. Sledujte Facebook haly, ať vám neuteče přihlašování.</p></div>
+    <div class="card"><h3>Mentální trénink handlera</h3><p>Workshopy s Jitkou: hlava rozhoduje závody. Termíny vypíšeme na podzim.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>JAK NÁS NAJDETE</h2>
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <div><img src="fotky/hala-mapa.png" alt="Mapa — Drážďanská 858, Ústí nad Labem" style="width:100%;border-radius:12px"></div>
+    <div><img src="fotky/hala4.jpeg" alt="Šedá hala zvenku" style="width:100%;border-radius:12px;object-fit:cover;max-height:260px"><p class="note" style="margin-top:10px">Hala stojí ve sportovním areálu — <b>naše je tahle šedá</b> (v areálu jsou haly dvě). Klíče se vyzvedávají na recepci T-clubu.</p></div>
+  </div>
+</div></section>
+
+<footer id="kontakt"><div class="wrap"><div class="fgrid">
+  <div><h3>HALA ÚSTÍ</h3>Drážďanská 858<br>400 07 Ústí nad Labem-Neštěmice<br><br>Ing. Jitka Ďuricová<br>+420 724 256 055<br>duricova@systemika-nlp.cz</div>
+  <div><h3>Jak k nám</h3>Autem: sjezd z D8 (E55), po I/13 směr Krásné Březno — 10 minut.<br>MHD: trolejbus 41/70/76 na Vojanova Zoo, pak 2 min pěšky.</div>
+  <div><h3>Odkazy</h3><a href="https://hala-usti.dogres.cz/">Rezervační systém Dogres</a><br><a href="https://www.facebook.com/people/Hala-%C3%9Ast%C3%AD/61580645141085/">Facebook</a><br><a href="https://hala-usti.dogres.cz/">Provozní řád (v rezervačním systému)</a><br><a href="#">Časté dotazy</a><br><br>Halu provozuje Centrum systemiky a NLP s.r.o.<br>Provozní haly: Jitka Ďuricová</div>
+</div></div></footer>
+
+</body></html>

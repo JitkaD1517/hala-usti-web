@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pronájem haly — Hala Ústí</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0B1F33;--green:#37B24D;--ink:#1c2733;--grey:#5c6b7a;--bg:#f5f7f9}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink)}
+h1,h2,h3{font-family:'Barlow Condensed';letter-spacing:1px;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.top{background:var(--navy);color:#fff;padding:20px 0}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Barlow Condensed';font-weight:800;font-size:24px;letter-spacing:2px}
+.nav a{color:#cfd8e3;text-decoration:none;margin-left:18px;font-size:15px;font-weight:600}
+.cta{display:inline-block;background:var(--green);color:#fff;font-weight:700;text-decoration:none;padding:14px 30px;border-radius:10px;font-size:17px}
+.head{background:linear-gradient(160deg,#0B1F33 60%,#123152);color:#fff;padding:40px 0 46px}
+.head h1{font-size:46px}
+.head p{color:#c9d4e0;font-size:18px;max-width:680px}
+section{padding:50px 0}
+section.alt{background:var(--bg)}
+h2{font-size:34px;color:var(--navy);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:18px}
+.card h3{font-size:20px;color:var(--navy);margin-bottom:6px}
+.card p{margin:0;color:var(--grey);font-size:15px;line-height:1.5}
+.card.warn{border-left:5px solid #e03131}
+.card.warn h3{color:#c92a2a}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.step{background:#fff;border:1px solid #e3e8ee;border-radius:12px;padding:18px 18px 18px 18px}
+.step:before{counter-increment:s;content:counter(s);display:inline-flex;width:34px;height:34px;border-radius:50%;background:var(--green);color:#fff;align-items:center;justify-content:center;font-weight:800;font-family:'Barlow Condensed';font-size:20px;margin-bottom:10px}
+.note{color:var(--grey);font-size:14px;margin-top:14px}
+footer{background:var(--navy);color:#b9c6d4;padding:30px 0;font-size:14px;text-align:center}
+a{color:var(--green)}
+</style></head><body>
+
+<div class="top"><div class="wrap nav">
+  <div class="logo"><svg width="38" height="38" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="#fff"/><circle cx="60" cy="60" r="56" fill="none" stroke="#37B24D" stroke-width="6"/><path d="M18,76 Q60,18 102,76" fill="none" stroke="#37B24D" stroke-width="4" stroke-dasharray="1 8" stroke-linecap="round"/><path transform="translate(24,26) scale(0.85)" fill="#0B1F33" d="M8,54 C14,44 24,38 34,36 C40,35 46,32 50,27 C53,23 57,20 62,20 C66,20 69,22 70,25 C71,27 73,28 76,28 L82,28 C83,28 84,29 83,30 L78,33 C76,34 74,34 72,34 C70,40 64,44 57,45 C48,47 40,48 33,52 C27,55 20,60 16,66 L12,64 C13,60 14,57 16,54 Z"/><g transform="translate(25,64)" fill="#37B24D"><rect x="0" y="0" width="6" height="46" rx="2"/><rect x="64" y="0" width="6" height="46" rx="2"/><rect x="-4" y="8" width="78" height="8" rx="3"/></g></svg> HALA ÚSTÍ</div>
+  <div><a href="index.html">Úvod</a><a href="index.html#hala">O hale</a><a href="pronajem.html"><b style="color:#7ce08f">Pronájem</b></a><a href="treninky.html">Tréninky</a><a href="index.html#cenik">Ceník</a><a href="index.html#kontakt">Kontakt</a><a class="cta" style="padding:8px 16px;font-size:14px;margin-left:16px" href="https://hala-usti.dogres.cz/">Rezervovat</a></div>
+</div></div>
+
+<div class="head"><div class="wrap">
+  <h1>PRONÁJEM HALY</h1>
+  <p>Halu si pronajmete jednoduše přes rezervační systém — pro individuální trénink, klubový blok i celodenní akci. Tady je vše, co potřebujete vědět, než přijedete.</p>
+</div></div>
+
+<section><div class="wrap">
+  <h2>JAK PRONÁJEM PROBÍHÁ</h2>
+  <div class="steps">
+    <div class="step"><b>Rezervace online</b><p class="note" style="margin-top:6px">Vyberte si volný termín na <a href="https://hala-usti.dogres.cz/">hala-usti.dogres.cz</a>. Rezervace potvrzujeme 1–2× denně.</p></div>
+    <div class="step"><b>Platba</b><p class="note" style="margin-top:6px">Kredity v systému, nebo převodem dle potvrzovacího e-mailu (nejpozději 3 dny před termínem). Celodenní akce: záloha 1/3.</p></div>
+    <div class="step"><b>Klíče na recepci</b><p class="note" style="margin-top:6px">Klíče od haly se vyzvedávají a vracejí oproti podpisu na recepci T-clubu — i když na sebe rezervace navazují.</p></div>
+    <div class="step"><b>Trénink & předání</b><p class="note" style="margin-top:6px">Halu předáváte ve stejném stavu, v jakém jste ji převzali — včetně zónových překážek na standardní výšce.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <h2>PRAVIDLA VE ZKRATCE</h2>
+  <div class="grid">
+    <div class="card"><h3>Storno zdarma 7 dní předem</h3><p>Rezervaci zrušíte bezplatně nejpozději 7 dní před začátkem; poté se hradí plná cena. U celodenních akcí je záloha nevratná.</p></div>
+    <div class="card"><h3>Pes pod kontrolou</h3><p>Mimo aktivní trénink musí být pes v hale i areálu na vodítku. Volné pobíhání psů mimo trénink není dovoleno.</p></div>
+    <div class="card warn"><h3>Zákaz venčení v hale</h3><p>Za každé vyvenčení psa v hale je pokuta 200 Kč splatná na místě. Venčete prosím před tréninkem venku.</p></div>
+    <div class="card"><h3>Čistá obuv a povrch</h3><p>Do haly vstupujte v čisté obuvi — chráníte povrch, na kterém trénují všichni. Boty si přezujte v zázemí.</p></div>
+    <div class="card"><h3>Prostor je monitorován</h3><p>Hala je z důvodu ochrany vybavení nepřetržitě monitorována kamerovým systémem se záznamem. Vstupem do haly berete nahrávání na vědomí.</p></div>
+    <div class="card warn"><h3>Vrácení klíčů</h3><p>Za neodevzdání nebo pozdní předání klíče je pokuta 200 Kč. Klíče se vracejí na recepci T-clubu oproti podpisu.</p></div>
+    <div class="card"><h3>Vlastní odpovědnost</h3><p>Vstup do haly je na vlastní nebezpečí — za sebe, doprovod i psa. Provozovatel neodpovídá za odložené věci.</p></div>
+    <div class="card"><h3>Provozní doba 6:00–20:00</h3><p>Rezervace mimo tuto dobu po individuální domluvě na +420 724 256 055.</p></div>
+  </div>
+  <div class="grid" style="margin-top:16px;grid-template-columns:1fr 1fr">
+    <div class="card"><h3>Parkur a přesun překážek</h3><p>Postavený parkur negarantujeme — čas na stavbu i úklid překážek je součástí vaší rezervace. <b>Kladina i áčko jsou na kolečkách</b>, přemístíte je snadno sami; u kladiny postupujte podle návodu (členská sekce v rezervačním systému). Zónové překážky vracejte na standardní výšku. Uložené klece jsou soukromé a nepoužívají se.</p></div>
+    <div class="card"><h3>Video: jak přesouvat kladinu</h3><video src="video/kladina-3-spusteni.mp4" controls preload="metadata" style="width:100%;border-radius:10px;margin-top:8px"></video><p style="margin:10px 0 0"><a href="navod-kladina.html">Celý návod krok za krokem →</a></p></div>
+  </div>
+  <p class="note">Kompletní znění: <a href="https://hala-usti.dogres.cz/">Provozní řád v rezervačním systému</a>. Odesláním rezervace s provozním řádem souhlasíte.</p>
+</div></section>
+
+<section><div class="wrap" style="text-align:center">
+  <h2>CHCETE PRAVIDELNÝ BLOK NEBO CELODENNÍ AKCI?</h2>
+  <p style="color:var(--grey);max-width:640px;margin:0 auto 24px">Pro kluby a trenéry držíme pevné týdenní bloky na celou sezónu, pro semináře a závody celodenní pronájem s garancí termínu i ceny. Ozvěte se — domluvíme podmínky.</p>
+  <a class="cta" href="https://hala-usti.dogres.cz/">Rezervovat termín</a>
+  <p class="note">duricova@systemika-nlp.cz · +420 724 256 055</p>
+</div></section>
+
+<footer>Halu provozuje Centrum systemiky a NLP s.r.o. · Provozní haly: Jitka Ďuricová · Drážďanská 858, Ústí nad Labem-Neštěmice</footer>
+</body></html>
