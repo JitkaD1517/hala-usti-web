@@ -44,6 +44,30 @@ footer{background:var(--navy);color:#b9c6d4;padding:44px 0;font-size:15px}
 footer h3{color:#fff;font-size:22px;margin-bottom:10px}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
 a{color:var(--green)}
+/* ===== MOBIL ===== */
+@media (max-width:820px){
+  .wrap{padding:0 16px}
+  .nav{flex-wrap:wrap;margin-bottom:26px}
+  .logo{font-size:22px}
+  .logo svg{width:38px;height:38px}
+  .nav>div:last-child{width:100%;display:flex;flex-wrap:wrap;align-items:center;gap:9px 16px;margin-top:14px}
+  .nav>div:last-child a{margin-left:0!important}
+  .hero{padding:18px 0 44px}
+  .hero h1{font-size:34px}
+  .hero p.sub{font-size:16px}
+  .cta{display:block;text-align:center;margin:0 0 10px;padding:14px 20px;font-size:16px}
+  .cta.ghost{margin-bottom:0}
+  .nav .cta{display:inline-block;margin:0}
+  .badges{gap:10px;margin-top:30px}
+  .badge{padding:11px 16px;font-size:14px;flex:1 1 44%}
+  .badge b{font-size:19px}
+  .akce{font-size:15px;padding:12px 16px}
+  section{padding:40px 0}
+  h2{font-size:28px;margin-bottom:20px}
+  .grid,.fgrid{grid-template-columns:1fr!important}
+  .tren{grid-template-columns:1fr!important;gap:18px}
+  th,td{padding:11px 12px;font-size:14px}
+}
 </style></head><body>
 
 <div class="hero"><div class="wrap">
@@ -52,7 +76,7 @@ a{color:var(--green)}
       <svg width="46" height="46" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" fill="#fff"/><circle cx="60" cy="60" r="56" fill="none" stroke="#37B24D" stroke-width="6"/><path d="M18,76 Q60,18 102,76" fill="none" stroke="#37B24D" stroke-width="4" stroke-dasharray="1 8" stroke-linecap="round"/><path transform="translate(24,26) scale(0.85)" fill="#0B1F33" d="M8,54 C14,44 24,38 34,36 C40,35 46,32 50,27 C53,23 57,20 62,20 C66,20 69,22 70,25 C71,27 73,28 76,28 L82,28 C83,28 84,29 83,30 L78,33 C76,34 74,34 72,34 C70,40 64,44 57,45 C48,47 40,48 33,52 C27,55 20,60 16,66 L12,64 C13,60 14,57 16,54 Z"/><g transform="translate(25,64)" fill="#37B24D"><rect x="0" y="0" width="6" height="46" rx="2"/><rect x="64" y="0" width="6" height="46" rx="2"/><rect x="-4" y="8" width="78" height="8" rx="3"/></g></svg>
       HALA ÚSTÍ
     </div>
-    <div><a href="#hala">O hale</a><a href="pronajem.html">Pronájem</a><a href="treninky.html">Tréninky</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a><a class="cta" style="padding:8px 18px;font-size:15px;margin-left:22px" href="https://hala-usti.dogres.cz/">Rezervovat</a><a class="de" href="#">DE</a></div>
+    <div><a href="#hala">O hale</a><a href="pronajem.html">Pronájem</a><a href="treninky.html">Tréninky</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a><a class="cta" style="padding:8px 18px;font-size:15px;margin-left:22px" href="https://hala-usti.dogres.cz/">Rezervovat</a><a class="de" href="deutsch.html">DE</a></div>
   </div>
   <h1>Krytá profesionální<br><em>agility hala</em> 40 × 15 m</h1>
   <p class="sub">Povrch Juta Grass Play Comfort 24, kompletní sada překážek a zázemí pro tréninky, semináře i závody. 10 minut z dálnice D8 — na půl cesty mezi Prahou a Drážďany.</p>
@@ -129,7 +153,7 @@ a{color:var(--green)}
 <footer id="kontakt"><div class="wrap"><div class="fgrid">
   <div><h3>HALA ÚSTÍ</h3>Drážďanská 858<br>400 07 Ústí nad Labem-Neštěmice<br><br>Ing. Jitka Ďuricová<br>+420 724 256 055<br>duricova@systemika-nlp.cz</div>
   <div><h3>Jak k nám</h3>Autem: sjezd z D8 (E55), po I/13 směr Krásné Březno — 10 minut.<br>MHD: trolejbus 41/70/76 na Vojanova Zoo, pak 2 min pěšky.</div>
-  <div><h3>Odkazy</h3><a href="https://hala-usti.dogres.cz/">Rezervační systém Dogres</a><br><a href="https://www.facebook.com/people/Hala-%C3%9Ast%C3%AD/61580645141085/">Facebook</a><br><a href="https://hala-usti.dogres.cz/">Provozní řád (v rezervačním systému)</a><br><a href="#">Časté dotazy</a><br><br>Halu provozuje Centrum systemiky a NLP s.r.o.<br>Provozní haly: Jitka Ďuricová</div>
+  <div><h3>Odkazy</h3><a href="https://hala-usti.dogres.cz/">Rezervační systém Dogres</a><br><a href="https://www.facebook.com/people/Hala-%C3%9Ast%C3%AD/61580645141085/">Facebook</a><br><a href="https://hala-usti.dogres.cz/pages/804">Provozní řád (v rezervačním systému)</a><br><a href="https://hala-usti.dogres.cz/pages/806">Časté dotazy</a><br><a href="deutsch.html">Deutsch — Info für Gäste</a><br><br>Halu provozuje Centrum systemiky a NLP s.r.o.<br>Provozní haly: Jitka Ďuricová</div>
 </div></div></footer>
 
 </body></html>
