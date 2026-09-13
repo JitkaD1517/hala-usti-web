@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hala Ústí — přesměrování</title>
+<script>
+// Staré odkazy (o-hale, cenik-a-navigace, provozni-rad, caste-dotazy, rezervace...) posíláme na nový web.
+(function(){
+  var p = (location.pathname || '').toLowerCase();
+  var map = [
+    [/pron[aá]jem|cen[ií]k|navigace/, '/pronajem.html'],
+    [/tr[eé]nink|kurz/,               '/treninky.html'],
+    [/kladin|n[aá]vod/,               '/navod-kladina.html']
+  ];
+  var target = '/';
+  for (var i=0;i<map.length;i++){ if(map[i][0].test(p)){ target = map[i][1]; break; } }
+  location.replace(target);
+})();
+</script>
+<meta http-equiv="refresh" content="1;url=/">
+<style>body{margin:0;font-family:Inter,Arial,sans-serif;background:#0B1F33;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;text-align:center}a{color:#37B24D}</style>
+</head><body>
+<div><p style="font-size:18px">Stránka se přesouvá na nový web haly…</p>
+<p><a href="/">Pokračovat na hlavní stránku Hala Ústí →</a></p></div>
+</body></html>
