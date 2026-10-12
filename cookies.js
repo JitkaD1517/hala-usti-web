@@ -7,10 +7,10 @@
   var de = /^de/i.test(document.documentElement.lang || '');
   var T = de ? {
     text: 'Wir verwenden Cookies, um die Besucherzahlen zu messen. Einverstanden?',
-    yes: 'Zustimmen', no: 'Nur notwendige', label: 'Cookie-Einstellungen'
+    yes: 'Zustimmen', no: 'Nur notwendige', label: 'Cookie-Einstellungen', more: 'Datenschutz'
   } : {
     text: 'Používáme cookies k měření návštěvnosti webu, abychom věděli, co vás zajímá. Souhlasíte?',
-    yes: 'Souhlasím', no: 'Jen nezbytné', label: 'Nastavení cookies'
+    yes: 'Souhlasím', no: 'Jen nezbytné', label: 'Nastavení cookies', more: 'Ochrana osobních údajů'
   };
 
   function g() { if (typeof window.gtag === 'function') window.gtag.apply(null, arguments); }
@@ -44,7 +44,8 @@
     bar.setAttribute('aria-label', T.label);
     bar.innerHTML = '<div class="cc-in"><p></p><div class="cc-b">' +
       '<button type="button" class="cc-yes"></button><button type="button" class="cc-no"></button></div></div>';
-    bar.querySelector('p').textContent = T.text;
+    bar.querySelector('p').textContent = T.text + ' ';
+    var ml = document.createElement('a'); ml.href = 'https://nlpacademy.cz/ochrana-osobnich-udaju'; ml.target = '_blank'; ml.rel = 'noopener'; ml.textContent = T.more; ml.style.color = '#7ce08f'; bar.querySelector('p').appendChild(ml);
     bar.querySelector('.cc-yes').textContent = T.yes;
     bar.querySelector('.cc-no').textContent = T.no;
     bar.querySelector('.cc-yes').addEventListener('click', function () { choose('granted'); });
