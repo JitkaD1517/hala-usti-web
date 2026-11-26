@@ -10,7 +10,7 @@ gtag('js',new Date());gtag('config','G-8C2NLE4P6N');
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C2NLE4P6N"></script>
 <script src="cookies.js" defer></script><link rel="icon" type="image/png" sizes="64x64" href="fotky/logo/favicon-strecha-64.png"><link rel="apple-touch-icon" href="fotky/logo/favicon-strecha-180.png"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Hala Ústí — Agility-Halle bei Dresden (45 Min.)</title>
-<meta name="description" content="Professionelle Indoor-Agility-Halle 40 × 15 m mit Galican-Hindernissen, nur 45 Minuten von Dresden. Online-Reservierung, wir sprechen Deutsch.">
+<meta name="description" content="Professionelle Indoor-Agility-Halle 40 × 15 m mit Galican-Hindernissen, nur 45 Minuten von Dresden. Termin einfach auf Deutsch anfragen, Zahlung in Euro möglich.">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0B1F33;--green:#37B24D;--green-d:#2B8A3E;--ink:#1c2733;--grey:#5c6b7a;--bg:#f5f7f9}
@@ -49,7 +49,28 @@ footer{background:var(--navy);color:#b9c6d4;padding:44px 0;font-size:15px}
 footer h3{color:#fff;font-size:22px;margin-bottom:10px}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
 a{color:var(--green)}
+.anfrage{background:#fff;border:1px solid #e3e8ee;border-radius:14px;padding:26px;box-shadow:0 1px 6px rgba(0,0,0,.06)}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+.fg .full{grid-column:1/-1}
+.fg label{display:block;font-weight:600;font-size:14px;color:var(--navy);margin-bottom:6px}
+.fg label span{color:var(--grey);font-weight:400}
+.fg input,.fg select,.fg textarea{width:100%;font:inherit;font-size:16px;padding:12px 13px;border:1px solid #c9d3dd;border-radius:9px;background:#fff;color:var(--ink)}
+.fg textarea{min-height:96px;resize:vertical}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+.zeit{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sendrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{font:inherit;font-weight:700;font-size:17px;border:0;border-radius:10px;padding:15px 26px;cursor:pointer;color:#fff;background:var(--green)}
+.btn:hover{background:var(--green-d)}
+.btn.mail{background:var(--navy)}
+.btn.mail:hover{background:#123152}
+.btn.klein{font-size:14px;padding:9px 16px}
+.fehler{display:none;margin-top:16px;background:#fdecec;border:1px solid #f0b4b4;color:#8a1f1f;border-radius:9px;padding:12px 14px;font-size:15px}
+.fertig{display:none;margin-top:18px;background:#eef9f0;border:1px solid #b9e4c1;border-radius:10px;padding:16px 18px;font-size:15px;line-height:1.5}
+.fertig pre{white-space:pre-wrap;font:inherit;font-size:14px;background:#fff;border:1px solid #d9e6dc;border-radius:8px;padding:12px;margin:10px 0}
 @media (max-width:820px){
+  .fg{grid-template-columns:1fr}
+  .anfrage{padding:18px}
+  .btn{width:100%}
   .wrap{padding:0 16px}
   .nav{flex-wrap:wrap;margin-bottom:26px}
   .logo{font-size:22px}.logo svg{width:38px;height:38px}
@@ -76,17 +97,17 @@ a{color:var(--green)}
       <img src="fotky/logo/logo-strecha-onwhite-512.png" alt="Hala Ústí" style="width:51px;height:51px;border-radius:50%;flex:none">
       HALA ÚSTÍ
     </div>
-    <div><a href="#halle">Die Halle</a><a href="#preise">Preise</a><a href="#anfahrt">Anfahrt</a><a href="hausordnung.html">Hausordnung</a><a href="#kontakt">Kontakt</a><a class="cta" style="padding:8px 18px;font-size:15px;margin-left:22px" href="https://hala-usti.dogres.cz/">Reservieren</a><a class="cz" href="index.html">CZ</a></div>
+    <div><a href="#halle">Die Halle</a><a href="#preise">Preise</a><a href="#anfahrt">Anfahrt</a><a href="hausordnung.html">Hausordnung</a><a href="#kontakt">Kontakt</a><a class="cta" style="padding:8px 18px;font-size:15px;margin-left:22px" href="#anfrage">Termin anfragen</a><a class="cz" href="index.html">CZ</a></div>
   </div>
   <h1>Indoor-<em>Agility-Halle</em><br>40 × 15 m — 45 Min. von Dresden</h1>
   <p class="sub">Professionelle Trainingshalle mit Juta-Grass-Play-Comfort-24-Belag und einem kompletten Galican-Hindernisset. Nur 45 Minuten über die A17/D8 — für Hundesportler aus Sachsen ideal erreichbar. Wir antworten auf Deutsch.</p>
-  <a class="cta" href="https://hala-usti.dogres.cz/">Termin reservieren</a>
+  <a class="cta" href="#anfrage">Termin anfragen</a>
   <a class="cta ghost" href="#preise">Preise ansehen</a>
   <div class="badges">
     <div class="badge"><b>40 × 15 m</b>vollwertiger Parcours</div>
     <div class="badge"><b>Galican</b>komplettes Hindernisset</div>
     <div class="badge"><b>45 Min.</b>ab Dresden (A17/D8)</div>
-    <div class="badge"><b>Mo–Fr 6–20 · Sa–So 8–20</b>online buchbar</div>
+    <div class="badge"><b>Mo–Fr 6–20 · Sa–So 8–20</b>Anfrage auf Deutsch</div>
   </div>
 </div></div>
 
@@ -101,7 +122,7 @@ a{color:var(--green)}
     <div class="card"><h3>Galican-Hindernisse</h3><p>Komplettes Set der spanischen Marke Galican: Laufsteg (Soft Line), A-Wand, Wippe, Tunnel 3/4/5/6 m, 12 Sprünge, Weitsprung, Mauer, Reifen, Slalom. Laufsteg und A-Wand sind auf Rollen — leicht selbst zu verschieben.</p></div>
     <div class="card"><h3>Belag</h3><p>Juta Grass Play Comfort 24 — sicherer, schneller und gelenkschonender Belag, speziell für den Hundesport entwickelt.</p></div>
     <div class="card"><h3>Ausstattung</h3><p>Parkplätze an der Halle, Aufenthaltsbereich für Hundeführer, Tagesmiete für Seminare und Turniere. Mo–Fr 6:00–20:00 Uhr, Sa–So 8:00–20:00 Uhr (nach Absprache auch länger). Kaffee, Getränke und kleine Snacks gibt es im <b>T-Club</b> (Fitnesscenter direkt im Areal) — an der Rezeption, wo auch die Schlüssel abgeholt werden.</p></div>
-    <div class="card"><h3>Online-Reservierung</h3><p>Übersichtliches Reservierungssystem Dogres — freie Zeiten sehen und mit wenigen Klicks buchen, auch vom Handy.</p></div>
+    <div class="card"><h3>Reservierung auf Deutsch</h3><p>Wunschtermin über das <a href="#anfrage">Formular</a> senden, per WhatsApp oder E-Mail. Wir bestätigen auf Deutsch und tragen die Reservierung für Sie ein — keine Registrierung nötig.</p></div>
   </div>
 </div></section>
 
@@ -123,21 +144,50 @@ a{color:var(--green)}
     <tr><td>20 Stunden</td><td class="p" style="text-align:right">8 000 Kč</td><td class="p" style="text-align:right">400 Kč</td></tr>
   </table>
   <p class="note">Paket bestellen: <a href="predplatne.html">hala-usti.cz/predplatne.html</a> (Formular auf Tschechisch: E-Mail, Telefon, Name). Bei der Reservierung im Kalender bitte „balíček“ (Paket) in die Notiz schreiben, wir buchen die Stunde vom Paket ab.</p>
-  <p class="note">Zahlung und Buchung über das Reservierungssystem Dogres. Bei Fragen helfen wir gern auf Deutsch: duricova@systemika-nlp.cz, +420 724 256 055.</p>
+  <p class="note"><b>Zahlung in Euro möglich:</b> per SEPA-Überweisung, Umrechnung zum Tageskurs (2 Stunden ≈ 37 EUR, Stand November 2026). Keine Barzahlung. Bei Fragen helfen wir gern auf Deutsch: duricova@systemika-nlp.cz, +420 724 256 055.</p>
 </div></section>
 
-<section id="reservierung"><div class="wrap">
-  <h2>SO RESERVIEREN SIE</h2>
+<section id="anfrage"><div class="wrap">
+  <h2>TERMIN ANFRAGEN</h2>
+  <p class="note" style="font-size:16px;margin:-10px 0 22px;max-width:760px">Schreiben Sie uns Ihren Wunschtermin. Wir antworten auf Deutsch, bestätigen den Termin und tragen die Reservierung für Sie ein. Eine Registrierung im Reservierungssystem ist nicht nötig.</p>
+  <form class="anfrage" id="anfrageForm" novalidate>
+    <div class="fg">
+      <div><label for="af-name">Name</label><input id="af-name" type="text" autocomplete="name" required></div>
+      <div><label for="af-verein">Verein / Hundeschule <span>(optional)</span></label><input id="af-verein" type="text" autocomplete="organization"></div>
+      <div><label for="af-mail">E-Mail</label><input id="af-mail" type="email" autocomplete="email" required></div>
+      <div><label for="af-tel">Telefon / WhatsApp <span>(optional)</span></label><input id="af-tel" type="tel" autocomplete="tel"></div>
+      <div><label for="af-datum">Wunschtermin</label><input id="af-datum" type="date" required></div>
+      <div><label for="af-von">Uhrzeit</label><div class="zeit"><select id="af-von" aria-label="Uhrzeit von" required></select><select id="af-bis" aria-label="Uhrzeit bis" required></select></div></div>
+      <div><label for="af-sport">Sportart <span>(optional)</span></label><select id="af-sport"><option value="">Bitte wählen</option><option>Agility</option><option>Hoopers</option><option>Rally Obedience</option><option>Obedience</option><option>Treibball</option><option>Anderes</option></select></div>
+      <div><label for="af-teams">Anzahl Teams <span>(optional)</span></label><input id="af-teams" type="number" min="1" max="40" inputmode="numeric"></div>
+      <div class="full"><label for="af-text">Nachricht <span>(optional — z. B. Ersatztermin, Fragen)</span></label><textarea id="af-text"></textarea></div>
+    </div>
+    <div class="fehler" id="af-fehler" role="alert"></div>
+    <div class="sendrow">
+      <button type="button" class="btn" data-weg="whatsapp">Per WhatsApp senden</button>
+      <button type="button" class="btn mail" data-weg="email">Per E-Mail senden</button>
+    </div>
+    <p class="note">Es öffnet sich WhatsApp bzw. Ihr E-Mail-Programm mit der fertigen Nachricht — Sie müssen nur noch auf Senden tippen. Mit der Anfrage stimmen Sie der <a href="hausordnung.html"><b>Hausordnung</b></a> zu.</p>
+    <div class="fertig" id="af-fertig">
+      <b>Hat sich nichts geöffnet?</b> Kopieren Sie den Text und senden Sie ihn an <a href="mailto:duricova@systemika-nlp.cz">duricova@systemika-nlp.cz</a> oder per WhatsApp an +420 724 256 055.
+      <pre id="af-vorschau"></pre>
+      <button type="button" class="btn klein" id="af-kopieren">Text kopieren</button>
+    </div>
+  </form>
+</div></section>
+
+<section class="alt" id="reservierung"><div class="wrap">
+  <h2>SO EINFACH GEHT ES</h2>
   <div class="steps">
-    <div class="step"><b>1 · Registrieren</b><p class="note" style="margin-top:6px">Im Reservierungssystem <a href="https://hala-usti.dogres.cz/">hala-usti.dogres.cz</a> auf „Zažádat o členství“ (Mitgliedschaft beantragen) klicken.</p></div>
-    <div class="step"><b>2 · Termin wählen</b><p class="note" style="margin-top:6px">Freie Stunde im Kalender auswählen und buchen. Bezahlt wird per Überweisung in CZK (tschechische Kronen) nach der Reservierungsbestätigung, Stundenpakete auch online per Karte. Keine Barzahlung.</p></div>
-    <div class="step"><b>3 · Schlüssel</b><p class="note" style="margin-top:6px">Der Hallenschlüssel wird an der Rezeption des T-Clubs abgeholt und zurückgegeben — dort gibt es auch Kaffee und Getränke.</p></div>
-    <div class="step"><b>4 · Trainieren</b><p class="note" style="margin-top:6px">Die Halle wird im gleichen Zustand übergeben wie übernommen (Zonenhindernisse auf Standardhöhe).</p></div>
+    <div class="step"><b>1 · Anfrage senden</b><p class="note" style="margin-top:6px">Wunschtermin über das <a href="#anfrage">Formular</a>, per WhatsApp oder E-Mail schicken — auf Deutsch.</p></div>
+    <div class="step"><b>2 · Bestätigung</b><p class="note" style="margin-top:6px">Wir bestätigen den Termin und tragen die Reservierung für Sie ein. Sie müssen sich nirgends registrieren.</p></div>
+    <div class="step"><b>3 · Bezahlen</b><p class="note" style="margin-top:6px">Per SEPA-Überweisung in Euro oder in CZK (tschechische Kronen). Die Kontodaten erhalten Sie mit der Bestätigung. Keine Barzahlung.</p></div>
+    <div class="step"><b>4 · Schlüssel</b><p class="note" style="margin-top:6px">Der Hallenschlüssel wird an der Rezeption des T-Clubs abgeholt und zurückgegeben. Die Halle wird im gleichen Zustand übergeben wie übernommen.</p></div>
   </div>
-  <p class="note" style="margin-top:16px">Mit dem Absenden der Reservierung stimmen Sie der <a href="hausordnung.html"><b>Hausordnung</b></a> zu (Schlüssel, Kameraüberwachung, Nutzung der Halle). Bitte vor dem ersten Besuch lesen.</p>
+  <p class="note" style="margin-top:16px">Sie kennen unser Reservierungssystem schon? Dann können Sie weiterhin direkt im <a href="https://hala-usti.dogres.cz/">Kalender Dogres</a> buchen (auf Tschechisch).</p>
 </div></section>
 
-<section class="alt" id="anfahrt"><div class="wrap">
+<section id="anfahrt"><div class="wrap">
   <h2>ANFAHRT</h2>
   <div class="grid" style="grid-template-columns:1fr 1fr">
     <div><img src="fotky/hala-mapa.png" alt="Karte — Drážďanská 858, Ústí nad Labem" style="width:100%;border-radius:12px"></div>
@@ -150,5 +200,61 @@ a{color:var(--green)}
   <div><h3>Anfahrt</h3>Auto: ab Dresden A17 → D8 (E55), Abfahrt Ústí nad Labem, dann Richtung Krásné Březno — ca. 45 Min.<br>Wir antworten gern auch auf Deutsch.</div>
   <div><h3>Links</h3><a href="https://hala-usti.dogres.cz/">Reservierungssystem Dogres</a><br><a href="hausordnung.html">Hausordnung</a><br><a href="https://www.facebook.com/profile.php?id=61594772206204">Facebook (Deutsch)</a><br><a href="https://www.facebook.com/profile.php?id=61594392636426">Facebook (Česky)</a><br><a href="index.html">Česká verze webu</a><br><br>Betreiber: Centrum systemiky a NLP s.r.o.<br><a href="https://nlpacademy.cz/ochrana-osobnich-udaju" target="_blank" rel="noopener" style="color:#7ce08f">Datenschutz (Tschechisch)</a> · <a href="#" data-cookie-settings style="color:#7ce08f">Cookie-Einstellungen</a></div>
 </div></div></footer>
+
+<script>
+(function(){
+  var f=document.getElementById('anfrageForm'); if(!f) return;
+  var $=function(id){return document.getElementById(id)};
+  var von=$('af-von'), bis=$('af-bis'), datum=$('af-datum');
+  function opt(sel,h,txt){var o=document.createElement('option');o.value=h;o.textContent=txt;sel.appendChild(o)}
+  opt(von,'','von'); opt(bis,'','bis');
+  for(var h=6;h<=19;h++) opt(von,h,h+':00');
+  for(var k=7;k<=20;k++) opt(bis,k,k+':00');
+  var t=new Date(); datum.min=t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2);
+  von.addEventListener('change',function(){ if(von.value && (!bis.value || +bis.value<=+von.value)) bis.value=Math.min(20,+von.value+1); });
+  var TAGE=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+  function fehler(m){var e=$('af-fehler'); e.textContent=m; e.style.display=m?'block':'none';}
+  function bauen(){
+    var name=$('af-name').value.trim(), mail=$('af-mail').value.trim();
+    if(!name) return fehler('Bitte geben Sie Ihren Namen an.'),null;
+    if(!/^[^@ ]+@[^@ ]+[.][^@ ]+$/.test(mail)) return fehler('Bitte geben Sie eine gültige E-Mail-Adresse an.'),null;
+    if(!datum.value) return fehler('Bitte wählen Sie Ihren Wunschtermin.'),null;
+    if(datum.min && datum.value<datum.min) return fehler('Der Wunschtermin liegt in der Vergangenheit.'),null;
+    if(!von.value||!bis.value) return fehler('Bitte wählen Sie die Uhrzeit von – bis.'),null;
+    if(+bis.value<=+von.value) return fehler('Das Ende muss nach dem Beginn liegen.'),null;
+    var p=datum.value.split('-'), d=new Date(+p[0],+p[1]-1,+p[2]), wt=d.getDay();
+    if((wt===0||wt===6) && +von.value<8) return fehler('Am Wochenende ist die Halle ab 8:00 Uhr geöffnet.'),null;
+    fehler('');
+    var std=+bis.value - +von.value;
+    var z=['Anfrage Hallenmiete (hala-usti.cz)','',
+      'Termin: '+TAGE[wt]+', '+p[2]+'.'+p[1]+'.'+p[0]+', '+von.value+':00–'+bis.value+':00 Uhr ('+std+' Std.)',
+      'Name: '+name];
+    if($('af-verein').value.trim()) z.push('Verein / Hundeschule: '+$('af-verein').value.trim());
+    z.push('E-Mail: '+mail);
+    if($('af-tel').value.trim()) z.push('Telefon / WhatsApp: '+$('af-tel').value.trim());
+    if($('af-sport').value) z.push('Sportart: '+$('af-sport').value);
+    if($('af-teams').value) z.push('Anzahl Teams: '+$('af-teams').value);
+    if($('af-text').value.trim()) z.push('','Nachricht: '+$('af-text').value.trim());
+    return {text:z.join('\n'), betreff:'Anfrage Hallenmiete '+p[2]+'.'+p[1]+'.'+p[0]+' – '+name};
+  }
+  function senden(weg){
+    var a=bauen(); if(!a) return;
+    $('af-vorschau').textContent=a.text; $('af-fertig').style.display='block';
+    try{gtag('event','anfrage_senden',{method:weg,page_path:location.pathname});}catch(e){}
+    var url = weg==='whatsapp'
+      ? 'https://wa.me/420724256055?text='+encodeURIComponent(a.text)
+      : 'mailto:duricova@systemika-nlp.cz?subject='+encodeURIComponent(a.betreff)+'&body='+encodeURIComponent(a.text);
+    if(weg==='whatsapp') window.open(url,'_blank','noopener'); else location.href=url;
+  }
+  var kn=f.querySelectorAll('button[data-weg]');
+  for(var i=0;i<kn.length;i++) kn[i].addEventListener('click',function(){senden(this.getAttribute('data-weg'));});
+  $('af-kopieren').addEventListener('click',function(){
+    var b=this, txt=$('af-vorschau').textContent;
+    function ok(){b.textContent='Kopiert';setTimeout(function(){b.textContent='Text kopieren'},2000)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,function(){});}
+    else{var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');ok()}catch(e){}document.body.removeChild(ta);}
+  });
+})();
+</script>
 
 </body></html>
